@@ -113,7 +113,7 @@ fetch('./data.json')
 
       finalScoreSpan.textContent = score;
 
-      const percentage = (score / quizQuestions.length) * 100;
+      const percentage = (score / data.length) * 100;
 
       if (percentage === 100) {
         resultMessage.textContent = "Perfect! You're a genius!";
@@ -135,4 +135,5 @@ fetch('./data.json')
 
   }) .catch(error => {
     console.error('Error loading JSON:', error);
+
 });
